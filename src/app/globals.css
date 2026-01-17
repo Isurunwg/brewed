@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-playfair: "Playfair Display", serif;
+  --font-inter: "Inter", sans-serif;
+  --color-cream: #F5F5F0;
+  --color-coffee-dark: #3D2314;
+  --color-coffee-medium: #6F4E37;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  font-family: var(--font-inter);
+  color: rgba(0, 0, 0, 0.8);
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Typography utilities */
+.font-serif {
+  font-family: var(--font-playfair);
+}
+
+.font-sans {
+  font-family: var(--font-inter);
+}
+
+/* Text shadow for better readability on varying backgrounds */
+.text-shadow {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-shadow-lg {
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
